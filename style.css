@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  background-color: #C1E3D6;
+  font-family: Rubik, sans-serif;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  padding: 32px;
+  gap: 32px;
+  align-items: center;
+}
+
+.form-container, .result-container {
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  text-align: -webkit-center;
+  height: fit-content;
+  width: 50%;
+  box-shadow: 0 3px 6px rgb(147 193 176 / 44%), 0 3px 6px rgb(146 187 171 / 48%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+input {
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: 16px;
+  text-align: center;
+  font-family: Rubik, sans-serif;
+}
+input:focus-visible {
+  outline-color: #84C7AE;
+}
+
+button {
+  background-color: #84C7AE;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  font-weight: 500;
+  font-family: Rubik, sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.form-container p {
+  margin: 0 auto 32px;
+}
+
+.result {
+  display: none;
+}
+
+.reset {
+  font-size: 0.8em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 4em;
+  font-weight: 900;
+  margin: 0;
+}
+
+@media (max-width:768px) {
+  .container {
+    flex-direction: column;
+  }
+  .form-container, .result-container {
+    width: auto;
+  }
+  body {
+    height: auto;
+  }
+}

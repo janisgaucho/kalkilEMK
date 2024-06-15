@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkil EMK</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loader.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="form-container">
+      <h1>Kalkil EMK</h1>
+      <p>EMK (Endèks Mas Ko) ka pèmèt kalkile gwosè ko moun ki baze si wotè èk pwa yo. Yo itilize EMK pou detekte problèm obezite ou byèn moun ki pa ni anpil pwa.</p>
+      <div class="form">
+        <input type="number" placeholder="Wotè ou an santimèt" id="height">
+        <input type="number" placeholder="Pwa ou an kilo" id="weight">
+        <button id="button">Kalkile EMK mwen an</button>
+        <p class="reset">Reset</p>
+      </div>
+    </div> 
+
+    <div class="result-container">
+      <h2>Rezilta a</h2>
+      <div class="loader"></div>
+      <div class="result">
+        <h3 id="emk">xx</h3>
+        <p>EMK ou ka indike an eta <span id="emk-comment">xx</span>. Pou an moun èk wotè ou (<span id="user-height">xx</span> sm), pwa ou dwèt ant <span id="min-weight">xx</span> épi <span id="max-weight">xx</span> kilo.</p>
+        </div>
+    </div>
+
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
