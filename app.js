@@ -24,25 +24,25 @@ function calculEMK() {
   button.style.cursor = "not-allowed";
 
   if (formuleEMK < 16.5) {
-    emkComment.textContent = "famine";
+    emkComment.textContent = "eta grangou";
     result.style.color = "#4BD8D8";
   } else if (formuleEMK >= 16.5 && formuleEMK < 18.5) {
-    emkComment.textContent = "maigreur";
+    emkComment.textContent = "de mensè";
     result.style.color = "#4BD8D8";
   } else if (formuleEMK >= 18.5 && formuleEMK < 25) {
-    emkComment.textContent = "corpulence normale";
+    emkComment.textContent = "kondisyon ko nomal";
     result.style.color = "#4BD8A3";
   } else if (formuleEMK >= 25 && formuleEMK < 30) {
-    emkComment.textContent = "surpoids";
+    emkComment.textContent = "eta ki two gwo";
     result.style.color = "#D8D24B";
   } else if (formuleEMK >= 30 && formuleEMK < 35) {
-    emkComment.textContent = "obésité modérée";
+    emkComment.textContent = "eta de obezite modere";
     result.style.color = "#D8974B";
   } else if (formuleEMK >= 35 && formuleEMK < 40) {
-    emkComment.textContent = "obésité sévère";
+    emkComment.textContent = "eta de obezite grav";
     result.style.color = "#D84B6D   ";
   } else {
-    emkComment.textContent = "obésité massive";
+    emkComment.textContent = "eta de obezite masiv";
   }
 }
 
